@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import {IconHome, IconHomeAktif, IconPesan, IconPesanAktif, IconProfile, IconProfileAktif} from '../../../assets'
-import { colors } from '../../../utils'
+import { colors, fonts } from '../../../utils'
 
 const TabItem = ({ isFocused, onPress, onLongPress, label}) => {
 
@@ -45,6 +45,6 @@ const styles = StyleSheet.create({
 color: isFocused ? colors.white : colors.secondary,
 fontSize: 11,
 marginTop: 4,
-
+fontFamily: fonts.primary.bold
   })
 })

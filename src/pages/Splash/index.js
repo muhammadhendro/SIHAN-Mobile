@@ -13,7 +13,7 @@ export default class Splash extends Component {
       <View style={styles.pages}>
           <Logo />
         <View style={styles.ilustrasi}>
-        <Ilustrasi />
+        
         </View>
       </View>
     );
