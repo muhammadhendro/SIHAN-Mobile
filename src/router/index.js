@@ -12,8 +12,8 @@ const MainApp = () => {
   return (
     <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
       <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
-      <Tab.Screen name="Pesan" component={Pesan} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Pesan" component={Pesan} options={{headerShown: false}} />
+      <Tab.Screen name="Profile" component={Profile} options={{headerShown: false}} />
     </Tab.Navigator>
   );
 }

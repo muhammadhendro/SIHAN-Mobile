@@ -6,6 +6,7 @@ import {
   Jarak,
   ListItem,
   ListProducts,
+  Tombol,
 } from '../../components';
 import {dummyItems, dummyProducts} from '../../data';
 import {colors, fonts} from '../../utils';
@@ -38,8 +39,9 @@ export default class Home extends Component {
             inginkan
           </Text>
           <ListItem items={items} />
+          <Tombol title="Lihat Semua" type="text" padding={7} />
         </View>
-        <Jarak height={50} />
+        <Jarak height={70} />
         </ScrollView>
       </View>
     );
