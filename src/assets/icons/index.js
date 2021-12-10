@@ -13,7 +13,7 @@ import IconSignOut from './sign-out.svg';
 import IconHistory from './history.svg';
 import IconBack from './arrow-left.svg';
 import IconKeranjangPutih from './keranjang-putih.svg'
-
+import IconSubmit from './submit.svg'
 export {
   IconHome,
   IconHomeAktif,
@@ -29,5 +29,6 @@ export {
   IconSignOut,
   IconHistory,
   IconBack,
-  IconKeranjangPutih
+  IconKeranjangPutih,
+IconSubmit 
 };

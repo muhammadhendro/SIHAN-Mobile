@@ -3,14 +3,14 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import {colors, fonts, responsiveWidth} from '../../../utils'
 import Tombol from '../Tombol'
 
-const CardItem = ({item}) => {
+const CardItem = ({item, navigation}) => {
     return (
         <View style={styles.container} >
             <TouchableOpacity style={styles.card}>
-                <Image source={item.gambar} style={styles.gambar} />
+                <Image source={item.gambar[0]} style={styles.gambar} />
             <Text style={styles.text}>{item.nama}</Text>
             </TouchableOpacity>
-            <Tombol type="text" title="Detail" padding={5} />
+            <Tombol type="text" title="Detail" padding={7} onPress={() => navigation.navigate('ItemDetail', {item})} />
         </View>
     )
 }

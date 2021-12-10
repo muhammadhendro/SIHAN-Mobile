@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Home, Splash, Pesan, Profile} from '../pages';
+import {Home, Splash, Pesan, Profile, ItemDetail, Login, Register1, LupaPassword} from '../pages';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigator } from '../components';
 
@@ -30,6 +30,26 @@ const Router = () => {
         <Stack.Screen
           name="MainApp"
           component={MainApp}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ItemDetail"
+          component={ItemDetail}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="register1"
+          component={Register1}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="lupapassword"
+          component={LupaPassword}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

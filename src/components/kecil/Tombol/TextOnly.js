@@ -3,12 +3,12 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import { colors, fonts } from '../../../utils'
 
-const TextOnly = ({ padding, title}) => {
+const TextOnly = ({ padding, title, onPress, fontSize}) => {
     
     
     return (
-        <TouchableOpacity style={styles.container(padding)}>
-            <Text style={styles.text} >
+        <TouchableOpacity style={styles.container(padding)} onPress={onPress} >
+            <Text style={styles.text(fontSize)} >
                 {title}
             </Text>
             
@@ -24,12 +24,12 @@ const styles = StyleSheet.create({
         padding: padding,
         borderRadius: 10,
     }),
-    text : {
+    text : (fontSize) => ({
         color: colors.white,
         textAlign: 'center',
-        fontSize: 13,
+        fontSize: fontSize ? fontSize: 13,
         fontFamily: fonts.primary.bold,
         
-    }
+    })
     
 })

@@ -23,6 +23,8 @@ export default class Home extends Component {
 
   render() {
     const {products, items} = this.state;
+const {navigation} = this.props
+
     return (
       <View style={styles.page}>
         <ScrollView showsVerticalScrollIndicator={false} >
@@ -38,7 +40,7 @@ export default class Home extends Component {
             Pilih <Text style={styles.boldLabel}> Produk </Text> yang anda
             inginkan
           </Text>
-          <ListItem items={items} />
+          <ListItem items={items} navigation={navigation} />
           <Tombol title="Lihat Semua" type="text" padding={7} />
         </View>
         <Jarak height={70} />
